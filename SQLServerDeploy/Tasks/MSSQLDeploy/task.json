@@ -12,13 +12,13 @@
   ],
   "version": {
     "Major": 1,
-    "Minor": 4,
-    "Patch": 0
+    "Minor": 0,
+    "Patch": 1
   },
   "demands": [
     "SqlPackage"    
   ],
-  "author": "Gustavo Américo",
+  "author": "GVDASA",
   "minimumAgentVersion": "1.89.0",
   "inputs": [
     {

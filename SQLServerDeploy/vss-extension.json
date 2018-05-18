@@ -1,10 +1,10 @@
 ﻿{
     "manifestVersion": 1,
-    "id": "SQLServerDeploy",
-    "name": "SQLServerDeploy",
-    "version": "1.1.90800",
-    "publisher": "gustavoamerico",
-    "public": true,
+    "id": "SQLServerDeploy-Custom",
+    "name": "Custom SQLServerDeploy",
+    "version": "1.0.5",
+    "publisher": "GVDASA",
+    "public": false,
     "runsOn": [
         "Agent",
         "DeploymentGroup"
@@ -14,7 +14,7 @@
             "id": "Microsoft.VisualStudio.Services"
         }
     ],
-    "description": "Task for deployment dacpac file.",
+    "description": "Task for deployment dacpac file. (Custom task to GVDASA Sistemas for private use)",
     "categories": [
         "Build and release"
     ],
@@ -65,16 +65,13 @@
         }
     },
     "links": {
-        "learn": {
-            "uri": "http://gustavoamerico.net"
-        },
         "support": {
-            "uri": "mailto:contato@gustavoamerico.net"
+            "uri": "mailto:lista-centris-tech@gvdasa.com.br"
         }
     },
     "contributions": [
         {
-            "id": "gustavoamerico",
+            "id": "1561E90D-14CC-47DE-812F-33F62B04BE0B",
             "name": "Deploy SQL Schema",
             "type": "ms.vss-distributed-task.task",
             "targets": [
@@ -112,6 +109,6 @@
     ],
     "repository": {
         "type": "git",
-        "uri": "https://github.com/GustavoAmerico/SQLServerDeploy"
+        "uri": "https://github.com/GVDASA/SQLServerDeploy"
     }
 }

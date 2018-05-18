@@ -73,6 +73,7 @@ $option.AllowIncompatiblePlatform = [System.Convert]::ToBoolean( $allowIncompati
 $option.VerifyDeployment = [System.Convert]::ToBoolean($verifyDeployment.Trim());
 $option.CreateNewDatabase =  [System.Convert]::ToBoolean($createNewDatabase.Trim());
 $option.CommandTimeout = [System.Convert]::ToInt32($commandTimeout);
+$option.SqlCommandVariableValues["master"] = "master";
 
 Write-Host [System.String]::Format("CreateNewDatabase:{0}",$option.CreateNewDatabase);
 Write-Host [System.String]::Format("CommandTimeout: {0}",$option.CommandTimeout);
@@ -80,6 +81,7 @@ Write-Host [System.String]::Format("BlockOnPossibleDataLoss:{0}",$option.BlockOn
 Write-Host [System.String]::Format("AllowIncompatiblePlatform:{0}",$option.AllowIncompatiblePlatform);
 Write-Host [System.String]::Format("CompareUsingTargetCollation:{0}",$option.CompareUsingTargetCollation);
 Write-Host [System.String]::Format("VerifyDeployment:{0}",$option.VerifyDeployment);
+Write-Host [System.String]::Format("SqlCommandVariableValues:{0}",$option.SqlCommandVariableValues);
 
  
 $dacService.Deploy($dp, $dbName, "True", $option)
